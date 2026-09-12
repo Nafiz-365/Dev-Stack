@@ -12,7 +12,13 @@ function App() {
         <>
             <NavBar></NavBar>
             <Banner></Banner>
-            <Suspense fallback={<h2 className="text-center text-2xl font-bold py-20">Loading...</h2>}>
+            <Suspense
+                fallback={
+                    <h2 className="text-center text-2xl font-bold py-20">
+                        Loading...
+                    </h2>
+                }
+            >
                 <Technologies
                     technologiesPromise={technologiesPromise}
                 ></Technologies>
