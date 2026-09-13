@@ -17,7 +17,7 @@ const StackPanel = ({
 }: IStackPanelProps) => {
     // console.log(selectedTechnologies, 'from StackPanel');
     return (
-        <div className="bg-white rounded-2xl border border-gray-200 p-5 sticky top-24">
+        <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 lg:sticky lg:top-24">
             {/* Heading */}
             <h3 className="text-xl font-bold text-gray-900 mb-1">Your Stack</h3>
             {selectedTechnologies.length > 0 ? (
@@ -33,7 +33,9 @@ const StackPanel = ({
             {/* Selected Items or Empty State */}
             {selectedTechnologies.length === 0 ? (
                 <div className="border border-dashed border-gray-200 rounded-xl py-8 text-center">
-                    <p className="text-sm text-gray-400">Your stack is empty.</p>
+                    <p className="text-sm text-gray-400">
+                        Your stack is empty.
+                    </p>
                 </div>
             ) : (
                 <div className="flex flex-col gap-3">
@@ -43,7 +45,9 @@ const StackPanel = ({
                                 key={tech.id}
                                 tech={tech}
                                 selectedTechnologies={selectedTechnologies}
-                                setSelectedTechnologies={setSelectedTechnologies}
+                                setSelectedTechnologies={
+                                    setSelectedTechnologies
+                                }
                                 onRemoveFromStack={onRemoveFromStack}
                             ></StackItemCard>
                         );

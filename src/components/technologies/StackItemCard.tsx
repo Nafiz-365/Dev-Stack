@@ -9,21 +9,20 @@ interface IStackItemCardProps {
     onRemoveFromStack: (tech: Itechnology) => void;
 }
 
-const StackItemCard = ({
-    tech,
-    onRemoveFromStack,
-}: IStackItemCardProps) => {
+const StackItemCard = ({ tech, onRemoveFromStack }: IStackItemCardProps) => {
     // console.log(tech, 'from StackItemCard');
     return (
-        <div className="flex gap-3 justify-between items-center border border-gray-200 rounded-2xl py-3 px-4 bg-white">
-            <div className="flex gap-3 items-center">
+        <div className="flex min-w-0 gap-3 justify-between items-center border border-gray-200 rounded-2xl py-3 px-4 bg-white">
+            <div className="flex min-w-0 gap-3 items-center">
                 <img
                     src={tech.icon}
                     alt={tech.name}
                     className="h-10 w-10 object-contain"
                 ></img>
-                <div>
-                    <h4 className="font-bold text-base">{tech.name}</h4>
+                <div className="min-w-0">
+                    <h4 className="font-bold text-base wrap-break-word">
+                        {tech.name}
+                    </h4>
                     <p className="text-xs text-gray-400">{tech.category}</p>
                 </div>
             </div>
