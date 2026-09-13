@@ -52,3 +52,4 @@ Parent to child: We pass data through props. For example, `Technologies` passes 
 ---
 
 © 2026 Dev Stack. All rights reserved.
+---
