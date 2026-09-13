@@ -2,7 +2,7 @@ import NavBar from './components/NavBar';
 import Banner from './components/Banner';
 import { Suspense, useState } from 'react';
 import type { Itechnology } from './types/technology';
-
+import Technologies from './components/technologies/Technologies';
 import { ToastContainer } from 'react-toastify';
 
 const fetchTechnologies = async (): Promise<Itechnology[]> => {
@@ -28,7 +28,6 @@ function App() {
                     technologiesPromise={technologiesPromise}
                 ></Technologies>
             </Suspense>
-            <Footer></Footer>
             <ToastContainer />
         </>
     );
