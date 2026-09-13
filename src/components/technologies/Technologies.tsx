@@ -2,7 +2,7 @@ import { use, useState } from 'react';
 import type { Itechnology } from '../../types/technology';
 import AvailableTechnologies from './AvailableTechnologies';
 import StackPanel from './StackPanel';
-import { toast, Zoom } from 'react-toastify';
+import { Bounce, Flip, toast, Zoom } from 'react-toastify';
 
 interface ITechnologiesProps {
     technologiesPromise: Promise<Itechnology[]>;
@@ -60,32 +60,32 @@ const Technologies = ({ technologiesPromise }: ITechnologiesProps) => {
         // console.log(restTechnologies);
         setSelectedTechnologies(restTechnologies);
 
-        toast.info(`${tech.name} has been removed from your stack.`, {
+        toast.error(`${tech.name} has been removed from your stack.`, {
             position: 'top-center',
-            autoClose: 3000,
+            autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: false,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
             theme: 'light',
-            transition: Zoom,
+            transition: Flip,
         });
     };
 
     //Remove All Logic
     const handleRemoveAll = () => {
         setSelectedTechnologies([]);
-        toast.info('All technologies have been removed from your stack.', {
+        toast.error('All technologies have been removed from your stack.', {
             position: 'top-center',
-            autoClose: 3000,
+            autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: false,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
             theme: 'light',
-            transition: Zoom,
+            transition: Bounce,
         });
     };
 
