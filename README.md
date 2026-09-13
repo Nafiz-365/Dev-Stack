@@ -22,7 +22,7 @@ A modern, responsive web application for exploring and curating your ideal techn
 
 ## 📸 Live Demo
 
-[Visit Live Site](#)
+[Visit Live Site](https://b14-dev-stack.netlify.app/)
 
 ---
 
