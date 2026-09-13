@@ -29,7 +29,7 @@ const TechCard = ({
                         alt={tech.name}
                         className="h-12 w-12 object-contain"
                     ></img>
-                    <span className="max-w-full text-xs font-semibold text-pink-600 bg-pink-50 px-3 py-1 rounded-full break-words">
+                    <span className="max-w-full text-xs font-semibold text-pink-600 bg-pink-50 px-3 py-1 rounded-full wrap-break-word">
                         {tech.badge}
                     </span>
                 </div>

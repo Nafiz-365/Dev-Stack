@@ -3,7 +3,7 @@ import Logo from '../assets/logo-text.png';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-300">
+        <footer className="bg-gray-100 text-gray-700">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Brand Block */}
@@ -15,42 +15,43 @@ const Footer = () => {
                                 className="h-8 brightness-200"
                             />
                         </div>
-                        <p className="text-sm text-gray-400 mb-4">
+                        <p className="text-sm text-gray-600 mb-4">
                             Curated tools, technologies, and resources for
                             developers building modern software.
                         </p>
-                        <div className="flex gap-4 text-gray-400">
+                        <div className="flex gap-4 text-gray-600">
                             <a
-                                href="#"
-                                className="hover:text-white transition-colors"
+                                href="https://github.com/Nafiz-365/Dev-Stack"
+                                className="hover:text-gray-900 transition-colors"
+                                target="_blank"
                             >
                                 <FaGithub></FaGithub>
                             </a>
                             <a
                                 href="#"
-                                className="hover:text-white transition-colors"
+                                className="hover:text-gray-900 transition-colors"
                             >
-                                <FaTwitter></FaTwitter>
+                                <FaLinkedin></FaLinkedin>
                             </a>
                             <a
                                 href="#"
-                                className="hover:text-white transition-colors"
+                                className="hover:text-gray-900 transition-colors"
                             >
-                                <FaLinkedin></FaLinkedin>
+                                <FaTwitter></FaTwitter>
                             </a>
                         </div>
                     </div>
 
                     {/* Product Links */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4 uppercase text-sm">
+                        <h4 className="text-gray-900 font-semibold mb-4 uppercase text-sm">
                             Product
                         </h4>
-                        <ul className="flex flex-col gap-2 text-sm text-gray-400">
+                        <ul className="flex flex-col gap-2 text-sm text-gray-600">
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     Home
                                 </a>
@@ -58,7 +59,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     Technologies
                                 </a>
@@ -66,7 +67,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     Projects
                                 </a>
@@ -76,14 +77,14 @@ const Footer = () => {
 
                     {/* Company Links */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4 uppercase text-sm">
+                        <h4 className="text-gray-900 font-semibold mb-4 uppercase text-sm">
                             Company
                         </h4>
-                        <ul className="flex flex-col gap-2 text-sm text-gray-400">
+                        <ul className="flex flex-col gap-2 text-sm text-gray-600">
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     About
                                 </a>
@@ -91,7 +92,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     Contact
                                 </a>
@@ -99,7 +100,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     Careers
                                 </a>
@@ -109,14 +110,14 @@ const Footer = () => {
 
                     {/* Legal Links */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4 uppercase text-sm">
+                        <h4 className="text-gray-900 font-semibold mb-4 uppercase text-sm">
                             Legal
                         </h4>
-                        <ul className="flex flex-col gap-2 text-sm text-gray-400">
+                        <ul className="flex flex-col gap-2 text-sm text-gray-600">
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     Privacy Policy
                                 </a>
@@ -124,7 +125,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-white transition-colors"
+                                    className="hover:text-gray-900 transition-colors"
                                 >
                                     Terms of Service
                                 </a>
@@ -135,19 +136,19 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-gray-800">
-                <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-sm text-gray-500">
+            <div className="border-t border-gray-300">
+                <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-sm text-gray-600">
                     <p>&copy; 2026 Dev Stack. All rights reserved.</p>
                     <div className="flex gap-4 mt-2 md:mt-0">
                         <a
                             href="#"
-                            className="hover:text-white transition-colors"
+                            className="hover:text-gray-900 transition-colors"
                         >
                             Privacy
                         </a>
                         <a
                             href="#"
-                            className="hover:text-white transition-colors"
+                            className="hover:text-gray-900 transition-colors"
                         >
                             Terms
                         </a>
